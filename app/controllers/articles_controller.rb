@@ -10,7 +10,7 @@ class ArticlesController < ApplicationController
     end
   end
 
-  # GET /articles/1 - test
+  # GET /articles/1 
   # GET /articles/1.json
   def show
     @article = Article.find(params[:id])
