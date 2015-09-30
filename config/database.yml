@@ -6,7 +6,7 @@ development:
   pool: 5
   timeout: 5000
   username: study
-  password: blink182
+  password: study
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
@@ -17,12 +17,12 @@ test:
   pool: 5
   timeout: 5000
   username: study
-  password: blink182
+  password: study
 
 production:
   adapter: postgresql
   database: rails_3_basic
   pool: 5
   timeout: 5000
-  username: study
-  password: blink182
+  username: fwadacpwmdfgfv
+  password: k7piPAQSySVXr2h4douJHu9E6H
