@@ -9,7 +9,7 @@ Bundler.require(:default, Rails.env) if defined?(Bundler)
 module Rails3Basic
   class Application < Rails::Application
     # Active observers that should always be running
-    consfig.active_record.observers = :comment_observer
+    config.active_record.observers = :comment_observer
 
     # Configure the default encoding used in templates for Ruby 1.9.
     config.encoding = "utf-8"
