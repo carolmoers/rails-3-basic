@@ -1,4 +1,6 @@
 class ArticlesController < ApplicationController
+  before_filter :authenticate, :only => [:index, :show]
+
   def index
     @articles = Article.all
 
