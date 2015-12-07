@@ -29,11 +29,11 @@ class ArticlesController < ApplicationController
   end
 
   def edit
-    @article = Article.find(params[:id])
+    @article = current_user.articles.find(params[:id])
   end
 
   def create
-    @article = Article.new(params[:article])
+    @article = current_user.artilces.new(params[:article])
 
     respond_to do |format|
       if @article.save
@@ -47,7 +47,7 @@ class ArticlesController < ApplicationController
   end
 
   def update
-    @article = Article.find(params[:id])
+    @article = current_user.articles.find(params[:id])
 
     respond_to do |format|
       if @article.update_attributes(params[:article])
